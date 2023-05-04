@@ -2,83 +2,55 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/project-clock-shop/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="data:image/png;base64,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"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnBQQKKDdoYBfOAAACiklEQVRIx43UTWhcVRQH8N99L6I+tYkwmSiCIlN10ZK6CILgRqIoYkFQwY2Logs3urDW4koEQQu66KaCaKRiF4Ig2LqJNYoIggs3qZGWdrAKfoyR1CIhsZl3XcxkMm/em0zO6p6v//m65wRq0HDAYxqugWgYBVjXdNKcsywLNRKPeN10R7udew+CaMmrPpWnGY96T2Nn7j2IoG7WBUtptts7dm8qR7v3ZZHZ6+s0e9GTm5JBitqiKJQMuvykK6G2aG91/FzdrIZF89aGQTRDbdW1VQC5Ga+5R2rdUW/bGIDocu1Q6/Paerbd5X17EAUrnvatscocki3n2Ad0nZfs6XE3esJVQxqcVFUfPWV/DzbiQXfItwPop7a7veDqXi+i3C32V4TpAcSCeMLLbgX/+aubQ27WpLxQ6NAMDnig+/rBW9a0/es3wYxx464fsB5obdt9nusKo5+d9rDbBXW7vOGS6LgPCwMtZBDd7BX1LreibtoHlmQyu9xmn+irgSKSYgceMqWpZdW6VXd6xhmtzsJjxZsu9sWMgyUkTpmXu9fzpkzITLpfo+uSm7NQalqoRYUvFOWmfGRG56/9YaJzZXzjWcsFgFCeQhCkWhZ6G3hT1/1PR7QqhlaSBESf+b0g3XDMd9LyzKv+AalzvihI5h2n8mxUAnDFJy73uKYj/im3bwugvOmp752wgeiMgxYr0+9NoXwLo+gGj9vnvJMuSoZdpGEAmwNN5JIhyW/2YK1cREeSGBOMDWtTh9qJ5nb6YAT9mjjVyX+kaTXo54k5P+4wWpnOeTfN/tYyK9spRJ/NJYedTjPOumC6s7OjIPr05x3ysZiuyqKfLNgwZVwIo91zvzjhsC/ly/4HjfDB2iFPr+wAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjMtMDUtMDRUMTA6NDA6NTUrMDA6MDDoUbm4AAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIzLTA1LTA0VDEwOjQwOjU1KzAwOjAwmQwBBAAAAFd6VFh0UmF3IHByb2ZpbGUgdHlwZSBpcHRjAAB4nOPyDAhxVigoyk/LzEnlUgADIwsuYwsTIxNLkxQDEyBEgDTDZAMjs1Qgy9jUyMTMxBzEB8uASKBKLgDqFxF08kI1lQAAAABJRU5ErkJggg=="
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnBQQKKDYfZydYAAABKElEQVQoz22Ru0oDURCGvzmbRFkNKLuFxVYhESWtpVqYVt8gIla+gIWFhWgn2uQBLARRLK1S2wopRLAxKMRGSGMgG1eTMxZ7iUKmGs73n7n8I36eOgeU1fAvxNLmlEvH3eGMQCV+tlgSpYjHOl3xn1kCTf4t4tEiSqtA21BJsWWTW27YxiYChZLBSfEyhwTMUGchkyAm1c6yT5k+Qyqs8pM1ddyjONllD+WKPC4+Ph/0EASjgKXEFl8MKNJkig1qhOkUnnrqaaBVPdeB9vRBVTta0zmNiYkNCOnQJKTICt80aOEki6aukOORewDuuEYyR3PZPkQ0KPBOgz5j38Ufja9gKTBilGEBNbyMyxmG6F8Mr44bsSbTTAiBT04c94kuVZmfgN845uIXnDBgW/stY6QAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjMtMDUtMDRUMTA6NDA6NTQrMDA6MDBOJrIMAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIzLTA1LTA0VDEwOjQwOjU0KzAwOjAwP3sKsAAAAFd6VFh0UmF3IHByb2ZpbGUgdHlwZSBpcHRjAAB4nOPyDAhxVigoyk/LzEnlUgADIwsuYwsTIxNLkxQDEyBEgDTDZAMjs1Qgy9jUyMTMxBzEB8uASKBKLgDqFxF08kI1lQAAAABJRU5ErkJggg=="
+    />
+    <link rel="manifest" href="data:application/manifest+json;base64,ewogICAgIm5hbWUiOiAiIiwKICAgICJzaG9ydF9uYW1lIjogIiIsCiAgICAiaWNvbnMiOiBbCiAgICAgICAgewogICAgICAgICAgICAic3JjIjogIi9hbmRyb2lkLWNocm9tZS0xOTJ4MTkyLnBuZyIsCiAgICAgICAgICAgICJzaXplcyI6ICIxOTJ4MTkyIiwKICAgICAgICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAic3JjIjogIi9hbmRyb2lkLWNocm9tZS01MTJ4NTEyLnBuZyIsCiAgICAgICAgICAgICJzaXplcyI6ICI1MTJ4NTEyIiwKICAgICAgICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIgogICAgICAgIH0KICAgIF0sCiAgICAidGhlbWVfY29sb3IiOiAiIzE0MTQxNCIsCiAgICAiYmFja2dyb3VuZF9jb2xvciI6ICIjMTQxNDE0IiwKICAgICJkaXNwbGF5IjogInN0YW5kYWxvbmUiCn0K" />
+    <link
+      rel="mask-icon"
+      href="/project-clock-shop/assets/safari-pinned-tab-a61053c5.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#141414" />
+    <title>The Watch Spot</title>
     
     <script type="module" crossorigin src="/project-clock-shop/assets/index-fac82e35.js"></script>
-    <link rel="stylesheet" href="/project-clock-shop/assets/index-10c40100.css">
+    <link rel="stylesheet" href="/project-clock-shop/assets/index-9cac1aab.css">
   </head>
   <body>
-    <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
-</header>
-
-
-    <section>
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/project-clock-shop/assets/javascript-8dac5379.svg" alt="" />
-    </section>
-
+    <!-- Maryna -->
+    
     <!-- Loads the specified .html file -->
-    <section class="vite-promo">
-  <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
-
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
-        </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
-        </li>
-      </ul>
-    </div>
-
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/project-clock-shop/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
-    </div>
-  </div>
-</section>
-
+    <main>
+      <!-- Andrii -->
+      
+      <!-- Oleksandr -->
+      
+      <!-- Anna -->
+      
+      <!-- Alexa -->
+      
+      <!-- Igor -->
+      
+    </main>
+    <!-- Maks -->
+    
 
     
   </body>
