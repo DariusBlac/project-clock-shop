@@ -41,8 +41,8 @@
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     
-    <script type="module" crossorigin src="/project-clock-shop/assets/index-6fa8b387.js"></script>
-    <link rel="stylesheet" href="/project-clock-shop/assets/index-7fe6496a.css">
+    <script type="module" crossorigin src="/project-clock-shop/assets/index-74d6e17b.js"></script>
+    <link rel="stylesheet" href="/project-clock-shop/assets/index-6f3b9d30.css">
   </head>
   <body>
     <!-- Maryna -->
@@ -71,10 +71,11 @@
     <a class="header-tel link" href="tel:+380684439426">+380 (68) 443-94-26</a>
 
     <button
-      class="header-btn-open js-open-menu"
+      class="header-btn-open"
       type="button"
       aria-expanded="false"
       aria-controls="mobile-menu"
+      data-menu-open
     >
       <svg class="header-open-icon" width="24" height="24">
         <use href="/project-clock-shop/assets/icons-0c58f8a8.svg#menu-mobile"></use>
@@ -82,15 +83,15 @@
     </button>
   </div>
 
-  <div class="mobile-container js-menu-container" id="mobile-menu">
+  <div class="mobile-container" id="mobile-menu" data-menu>
     <div class="mobile-menu">
-      <button class="mobile-menu-btn js-close-menu">
+      <button class="mobile-menu-btn is-open" data-menu-close>
         <svg class="mobile-close-icon" width="24" height="24">
           <use href="/project-clock-shop/assets/icons-0c58f8a8.svg#close-mobil"></use>
         </svg>
       </button>
       <nav class="menu-nav">
-        <a class="menu-logo link" href="">
+        <a class="menu-logo link" href="./index.html">
           <img
             class="header-img"
             src="/project-clock-shop/assets/logo-footer-e06c9185.svg"
@@ -269,7 +270,7 @@
     <h2 class="catalog-title">Catalog</h2>
     <ul class="catalog-card-list list">
       <li class="catalog-card">
-        <a class="catalog-link" href="">
+        <a class="catalog-link" href="plug">
           <div class="catalog-card-overlay">
             <picture>
               <source
@@ -319,7 +320,7 @@ Band Colour: Steel
         </a>
       </li>
       <li class="catalog-card">
-        <a class="catalog-link" href="">
+        <a class="catalog-link" href="plug">
           <div class="catalog-card-overlay">
             <picture>
               <source
@@ -367,7 +368,7 @@ Band Colour: Steel
         </a>
       </li>
       <li class="catalog-card">
-        <a class="catalog-link" href="">
+        <a class="catalog-link" href="plug">
           <div class="catalog-card-overlay">
             <picture>
               <source
@@ -417,7 +418,7 @@ Band Colour: Steel
         </a>
       </li>
       <li class="catalog-card">
-        <a class="catalog-link" href="">
+        <a class="catalog-link" href="plug">
           <div class="catalog-card-overlay">
             <picture>
               <source
@@ -465,7 +466,7 @@ Band Colour: Steel
         </a>
       </li>
       <li class="catalog-card">
-        <a class="catalog-link" href="">
+        <a class="catalog-link" href="plug">
           <div class="catalog-card-overlay">
             <picture>
               <source
@@ -513,7 +514,7 @@ Band Colour: Steel
         </a>
       </li>
       <li class="catalog-card">
-        <a class="catalog-link" href="">
+        <a class="catalog-link" href="plug">
           <div class="catalog-card-overlay">
             <picture>
               <source
@@ -561,7 +562,7 @@ Band Colour: Steel
         </a>
       </li>
       <li class="catalog-card">
-        <a class="catalog-link" href="">
+        <a class="catalog-link" href="plug">
           <div class="catalog-card-overlay">
             <picture>
               <source
@@ -611,7 +612,7 @@ Band Colour: Steel
         </a>
       </li>
       <li class="catalog-card">
-        <a class="catalog-link" href="">
+        <a class="catalog-link" href="plug">
           <div class="catalog-card-overlay">
             <picture>
               <source
@@ -659,7 +660,7 @@ Band Colour: Steel
         </a>
       </li>
       <li class="catalog-card hidden">
-        <a class="catalog-link" href="">
+        <a class="catalog-link" href="plug">
           <div class="catalog-card-overlay">
             <img
               srcset="/project-clock-shop/assets/image-9-2x-min-9d8c5a24.png 2x"
@@ -698,7 +699,7 @@ Band Colour: Steel
         </a>
       </li>
       <li class="catalog-card hidden">
-        <a class="catalog-link" href="">
+        <a class="catalog-link" href="plug">
           <div class="catalog-card-overlay">
             <img
               srcset="/project-clock-shop/assets/image-10-2x-min-72c054c2.png 2x"
@@ -739,7 +740,7 @@ Band Colour: Steel
         </a>
       </li>
       <li class="catalog-card hidden">
-        <a class="catalog-link" href="">
+        <a class="catalog-link" href="plug">
           <div class="catalog-card-overlay">
             <img
               srcset="/project-clock-shop/assets/image-11-2x-min-cc0c6a51.png 2x"
@@ -778,7 +779,7 @@ Band Colour: Steel
         </a>
       </li>
       <li class="catalog-card hidden">
-        <a class="catalog-link" href="">
+        <a class="catalog-link" href="plug">
           <div class="catalog-card-overlay">
             <img
               srcset="/project-clock-shop/assets/image-12-2x-min-e81a9c8a.png 2x"
@@ -1023,7 +1024,8 @@ Band Colour: Steel
                 rel="noopener noreferrrer nofollow"
                 target="_blank"
                 class="adress-text-footer"
-                href="https://goo.gl/maps/Yfn8MYMWKsNfN2FA6"
+                aria-label="open maps"
+                href="https://goo.gl/maps/AyCZaPdbJRr8c67z7"
                 >1678 S. Pioneer Road <br />
                 Salt Lake City <br />
                 UT 84104</a
@@ -1048,6 +1050,7 @@ Band Colour: Steel
               target="_blank"
               rel="noopener noreferrrer nofollow"
               class="link-media-footer"
+              aria-label="open facebook"
               href="https://www.facebook.com/"
             >
               <svg class="icon-media-footer" width="24" height="24">
@@ -1060,6 +1063,7 @@ Band Colour: Steel
               target="_blank"
               rel="noopener noreferrer nofollow"
               class="link-media-footer"
+              aria-label="open instagram"
               href="https://www.instagram.com/"
             >
               <svg class="icon-media-footer" width="24" height="24">
@@ -1072,6 +1076,7 @@ Band Colour: Steel
               target="_blank"
               rel="noopener noreferrrer nofollow"
               class="link-media-footer"
+              aria-label="open youtube"
               href="https://www.youtube.com/"
             >
               <svg class="icon-media-footer" width="24" height="24">
